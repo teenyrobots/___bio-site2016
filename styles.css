@@ -34,6 +34,8 @@ h2 {
 h3 { 
 	font-size: 1.17em;
 	text-transform: uppercase; 
+	margin-bottom: 0;
+	margin-top: 2em;
 }
 
 h4 { 
@@ -91,7 +93,7 @@ img{
 
 
 #about:before {
-  content:"";
+  /*content:"";*/
   display:block;
   height:3em; /* fixed header height*/
   margin:-3em 0 0; /* negative fixed header height */
@@ -110,7 +112,7 @@ img{
 	text-decoration: none;
 	text-align: center;
 	padding: .3em;
-	width: 2em;
+	width: 9em;
 	display: block;
 	margin-top: 1em;
 }
@@ -230,10 +232,12 @@ img{
 
 .thumb img {
 	margin-top: .5em;
+	width: 400px;
+	max-width: 95%;
 }
 
-.workContainer {
-	width: 99%;
+/*.workContainer {
+	width: 95%;
 	margin: auto;
 	display:flex;
 	display: -webkit-flex;
@@ -242,17 +246,27 @@ img{
 	flex-wrap: wrap;
 	-webkit-align-items: center;
     align-items: center;
+}*/
+
+.workMenu {
+	display: block;
+	margin: auto;
+	padding: 0;
+	margin-top: -2em;
 }
 
-#work:before {
-  content:"";
-  display:block;
-  height:3em; /* fixed header height*/
-  margin:-3em 0 0; /* negative fixed header height */
+.workMenu h3 {
+	color: purple;
+	padding: .25em 1em;
 }
 
-#work a:hover {
-	border: 0;
+.workMenu ul {
+	list-style-type: none;
+}
+
+.workMenu li {
+	display: inline-block;
+	margin-right: 2em;
 }
 
 @media screen and (max-width: 680px) {
